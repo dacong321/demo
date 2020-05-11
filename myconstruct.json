@@ -1,0 +1,15 @@
+{
+    "10086":{
+        "msgCardSeleceted":"except",
+        "opCode":"10003",
+        "byLogId":"byte",
+        "bIsFromHandTemp":"bool"
+    },
+
+    "key":
+    {
+        "opCode":"10004",
+        "bIsFuck":"bool",
+        "uinitCnt":"int"
+    }
+}
