@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var ws = new WebSocket('ws://localhost:8080');
+    ws.onopen = function () {
+        console.log('ws onopen');
+        //-- 发送给服务端'from client: hello'
+        ws.send('from client: hello');
+    };
+    ws.onmessage = function (e) {
+        console.log('ws onmessage');
+        console.log('from server: ' + e.data);
+    };
+    //--  输出 ：     ws onopen
+    //                ws onmessage
+    //                from server: world
+</script>
+
+</html>
+
